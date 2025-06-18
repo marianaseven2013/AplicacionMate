@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado - Significado de Nombres</title>
+    <link rel="stylesheet" href="mate.css">
+    <style>
+        .result-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+        
+        .meaning-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+        
+        .meaning-box pre {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+        }
+        
+        .meaning-box::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .meaning-box::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        
+        .meaning-box::-webkit-scrollbar-thumb {
+            background: #3498db;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="result-page">
+    <div class="result-container" id="resultToDownload">
+        <h1 id="resultName">Nombre*</h1>
+        <div class="meaning-box">
+            <pre id="nameMeaning" style="white-space: pre-wrap; word-break: break-word;">Aqui va el significado</pre>
+        </div>
+        <button id="downloadBtn">
+            <img src="services/Descarga.png" alt="Descargar" class="download-icon">
+            Descargar Resultado
+        </button>
+    </div>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="mate.js"></script>
+</body>
+</html>
