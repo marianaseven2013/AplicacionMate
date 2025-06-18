@@ -90,14 +90,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const historicalInfo = generateHistoricalInfo(name, nameAnalysis);
         
-        return `🔎 Significado detallado del nombre ${name}\n\n` +
-               `🌟 Origen: ${meaningInfo.origin}\n\n` +
-               `📖 Significado: ${meaningInfo.meaning}\n\n` +
-               `📜 Contexto histórico/cultural:\n${historicalInfo}\n\n` +
-               `🎭 Personalidad asociada: ${generatePersonalityTraits(name)}\n\n` +
-               `🌍 Variantes internacionales: ${variants}\n\n` +
-               `📊 Datos curiosos: ${generateFunFacts(name)}\n\n` +
-               `📚 Fuentes consultadas:\n` +
+        return ` Significado detallado del nombre ${name}\n\n` +
+               `Origen: ${meaningInfo.origin}\n\n` +
+               `Significado: ${meaningInfo.meaning}\n\n` +
+               `Contexto histórico/cultural:\n${historicalInfo}\n\n` +
+               `Personalidad asociada: ${generatePersonalityTraits(name)}\n\n` +
+               `Variantes internacionales: ${variants}\n\n` +
+               `Datos curiosos: ${generateFunFacts(name)}\n\n` +
+               `Fuentes consultadas:\n` +
                `- Análisis lingüístico automatizado\n` +
                `- Patrones etimológicos universales\n` +
                `- Base de datos de raíces onomásticas\n` +
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         return {
             origin: originInfo.text,
-            meaning: `${literalMeaning}\n\n${symbolicMeaning}\n\n💡 Interpretación: ${
+            meaning: `${literalMeaning}\n\n${symbolicMeaning}\n\n Interpretación: ${
                 analysis.syllableCount > 3 ? 
                 'Nombre con gran peso y presencia, sugiere profundidad y carácter' :
                 'Nombre dinámico y memorable, fácil de pronunciar'
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'z': 'Energía, vitalidad o finalización (del griego "zeta")'
         }[name.charAt(0).toLowerCase()] || 'un significado positivo y auspicioso';
         
-        return `🔤 Literalmente, podría derivar de raíces que significan ${initialMeaning}. ${
+        return ` Literalmente, podría derivar de raíces que significan ${initialMeaning}. ${
             analysis.hasAccent ? 
             'La tilde indica énfasis en la pronunciación y posible origen antiguo.' : 
             'Su estructura simple sugiere un origen moderno o adaptado.'}`;
@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', function() {
             selectedTraits.push(traits[index]);
         }
         
-        return `✨ Simbólicamente, ${name} representa ${selectedTraits.join(' y ')}. ` +
+        return `✨ Simbólicamente, ${name} representa ${selectedTraits.join(' y ')}.✨ ` +
                `En numerología, ${calculateNumerology(name)}. ` +
                `Color asociado: ${getColorAssociation(name)}.`;
     }
